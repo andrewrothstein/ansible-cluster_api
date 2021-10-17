@@ -32,4 +32,4 @@ dl_ver ()
     dl $ver linux arm64
 }
 
-dl_ver ${1:-0.4.3}
+dl_ver ${1:-1.0.0}

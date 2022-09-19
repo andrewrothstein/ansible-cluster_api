@@ -1,5 +1,7 @@
 ---
 # vars file for cluster_api
+cluster_api_os: '{{ ansible_system | lower }}'
+cluster_api_arch: '{{ cluster_api_arch_map[ansible_architecture] }}'
 cluster_api_platform: '{{ cluster_api_os }}-{{ cluster_api_arch }}'
 cluster_api_url: '{{ cluster_api_mirror }}/v{{ cluster_api_ver }}/clusterctl-{{ cluster_api_platform }}'
 cluster_api_exe: '{{ cluster_api_install_dir }}/clusterctl-{{ cluster_api_ver }}-{{ cluster_api_platform }}'

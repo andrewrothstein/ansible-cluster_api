@@ -30,6 +30,7 @@ dl_ver ()
     dl $ver darwin arm64
     dl $ver linux amd64
     dl $ver linux arm64
+    dl $ver linux ppc64le
 }
 
-dl_ver ${1:-1.2.1}
+dl_ver ${1:-1.2.2}

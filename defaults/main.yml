@@ -1,11 +1,12 @@
 ---
 # defaults file for cluster_api
-cluster_api_ver: 1.4.2
+cluster_api_ver: 1.4.3
 cluster_api_mirror: https://github.com/kubernetes-sigs/cluster-api/releases/download
 cluster_api_arch_map:
-  x86_64: amd64
   aarch64: arm64
+  arm64: arm64
   ppc64le: ppc64le
+  x86_64: amd64
 cluster_api_arch: amd64
 cluster_api_install_dir: /usr/local/bin
 cluster_api_checksums:
@@ -269,3 +270,14 @@ cluster_api_checksums:
     linux-arm64: sha256:daaa92565c99434e47645976fb7a5f853686e57c8a6fb43f8da337e44844a9b7
     # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.4.2/clusterctl-linux-ppc64le
     linux-ppc64le: sha256:abada92d1b8f4721f4b97435f17ad6f3a2c4e4be546e7a013f9a92992d4b1058
+  '1.4.3':
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.4.3/clusterctl-darwin-amd64
+    darwin-amd64: sha256:80f78c1ea0d9cf7c1f6fee4823e99a31164b0d7c40903202c8a50f3d71f01857
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.4.3/clusterctl-darwin-arm64
+    darwin-arm64: sha256:c8c9b78c7ad09dac251c73f3af9ef13b0f949b12fd32b7c9bb9aa94a5ddab529
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.4.3/clusterctl-linux-amd64
+    linux-amd64: sha256:4ec4cbce995511bc398e1cd7c798e830b181c8dd785fce9168456771be80b193
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.4.3/clusterctl-linux-arm64
+    linux-arm64: sha256:32d531a9a5e64ec23c4d3608a0a81a82a098e207ed8903c0b0db1727d994dc67
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.4.3/clusterctl-linux-ppc64le
+    linux-ppc64le: sha256:aa8d1a0382cff9005dd966d414700f7441e8556ad4df455ecf2346fc59ca77a9

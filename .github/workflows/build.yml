@@ -31,8 +31,8 @@ jobs:
         - alpine_3.18
         - alpine_edge
         - archlinux_latest
+        - debian_bookworm
         - debian_bullseye
-        - debian_buster
         - fedora_37
         - fedora_38
         - rockylinux_8

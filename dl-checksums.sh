@@ -33,4 +33,4 @@ dl_ver ()
     dl $ver linux ppc64le
 }
 
-dl_ver ${1:-1.5.3}
+dl_ver ${1:-1.6.0}

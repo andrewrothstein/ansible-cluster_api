@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-  - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.cluster_api
+  hosts: all
   tasks:
-  - command: /usr/local/bin/clusterctl version
-    register: cluster_api_test_output
-  - name: clusterctl version
-    debug:
-      msg: '{{ cluster_api_test_output.stdout }}'
+    - name: Installing andrewrothstein.cluster_api
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'clusterctl version'
+      ansible.builtin.command: /usr/local/bin/clusterctl version
+      changed_when: false
+      register: cluster_api_test_output
+    - name: Output from 'clusterctl version'
+      ansible.builtin.debug:
+        msg: '{{ cluster_api_test_output.stdout }}'

@@ -1,6 +1,6 @@
 ---
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -9,18 +9,18 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: downloading {{ cluster_api_url }} to {{ cluster_api_exe }}
+- name: Downloading {{ cluster_api_url }} to {{ cluster_api_exe }}
   become: true
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ cluster_api_url }}'
     dest: '{{ cluster_api_exe }}'
     checksum: '{{ cluster_api_checksum }}'
-    mode: 0755
-- name: linking {{ cluster_api_link }} to {{ cluster_api_exe }}
+    mode: '755'
+- name: Linking {{ cluster_api_link }} to {{ cluster_api_exe }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ cluster_api_exe }}'
     dest: '{{ cluster_api_link }}'
     state: link

@@ -11,9 +11,10 @@ dl()
     local ver=$1
     local os=$2
     local arch=$3
+    local dotexe=${4:-""}
     local platform="${os}-${arch}"
-    local lfile=$DIR/${APP}-${ver}-${platform}
-    local url=$MIRROR/v${ver}/${APP}-${platform}
+    local lfile="$DIR/${APP}-${ver}-${platform}${dotexe}"
+    local url="$MIRROR/v${ver}/${APP}-${platform}${dotexe}"
     if [ ! -e $lfile ]
     then
         curl -sSLf -o $lfile $url
@@ -31,6 +32,7 @@ dl_ver ()
     dl $ver linux amd64
     dl $ver linux arm64
     dl $ver linux ppc64le
+    dl $ver windows amd64 .exe
 }
 
-dl_ver ${1:-1.6.0}
+dl_ver ${1:-1.6.1}

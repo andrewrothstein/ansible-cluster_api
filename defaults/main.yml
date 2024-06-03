@@ -374,7 +374,6 @@ cluster_api_checksums:
     # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.6.3/clusterctl-windows-amd64.exe
     windows-amd64: sha256:5816bf5ccdfcef3a4b4b079cdb75f0409adf53c5f3334ae6a82e751cc9aad47c
   '1.7.1':
-  '1.7.1':
     # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.7.1/clusterctl-darwin-amd64
     darwin-amd64: sha256:ebbf934195c817fc93c3e123447a6e00cc0990bd1f08ba4462eccc2165000ad7
     # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.7.1/clusterctl-darwin-arm64

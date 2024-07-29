@@ -35,4 +35,4 @@ dl_ver ()
     dl $ver windows amd64 .exe
 }
 
-dl_ver ${1:-1.7.1}
+dl_ver ${1:-1.7.4}

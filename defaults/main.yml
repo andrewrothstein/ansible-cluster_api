@@ -1,6 +1,6 @@
 ---
 # defaults file for cluster_api
-cluster_api_ver: 1.8.5
+cluster_api_ver: 1.9.2
 cluster_api_mirror: https://github.com/kubernetes-sigs/cluster-api/releases/download
 cluster_api_arch_map:
   aarch64: arm64
@@ -464,3 +464,42 @@ cluster_api_checksums:
     linux-ppc64le: sha256:b889f7e404d47e66b7f319101f62805878f41fb0126ce7417ac864448a60d160
     # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.8.5/clusterctl-windows-amd64.exe
     windows-amd64: sha256:b9e698cf90a10b406abacee188d03f80f29a5bfb42ddcff522ffd7081fc2cbfa
+  '1.9.0':
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.0/clusterctl-darwin-amd64
+    darwin-amd64: sha256:348a7a48cb2cddc1e73f82461aa1a323644f379480290e86ebb8f049bd3a1d09
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.0/clusterctl-darwin-arm64
+    darwin-arm64: sha256:2ff11a8b4ac49438166ec864e3e5a8b7292df47d8abd922f0cb5c116232024c3
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.0/clusterctl-linux-amd64
+    linux-amd64: sha256:9cb34f83c3c88d27070cc03efea44dae80865eda0d9d4a74b9a6505f03f46ba6
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.0/clusterctl-linux-arm64
+    linux-arm64: sha256:1ee96c79c56ebb2386f83a7c923dc4170a2b7c5928791e9dacf3993b9c696839
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.0/clusterctl-linux-ppc64le
+    linux-ppc64le: sha256:9f3abb98948b3285db51e0a732c1bfd747656ff4c0fff988181828d7ee7bddae
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.0/clusterctl-windows-amd64.exe
+    windows-amd64: sha256:023f0515912e64e08581cb61edccc49049645d34aa5d695aae01e3d0ca77ece1
+  '1.9.1':
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.1/clusterctl-darwin-amd64
+    darwin-amd64: sha256:4393502c2ec3e3112497ad42432a632455e212eee3d39e5c0967d3ebc4ca12af
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.1/clusterctl-darwin-arm64
+    darwin-arm64: sha256:6d83410ed95f8ad70cb7ea06dfda2b260e39b087dece5b0281b2079f41492bdb
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.1/clusterctl-linux-amd64
+    linux-amd64: sha256:92542bb39fccf144116fb6a292af427ed3ffd091f61078e7c459a70e932c737a
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.1/clusterctl-linux-arm64
+    linux-arm64: sha256:50852d35063e79a2c6ee81deb8df1292f977b4f3eaba13b115f0b27ebc1d5e0a
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.1/clusterctl-linux-ppc64le
+    linux-ppc64le: sha256:c5c7c09a63fa82cfe3fa76f77bc5db1355f331d2c6d9d2ffec103eae7169910a
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.1/clusterctl-windows-amd64.exe
+    windows-amd64: sha256:9cff96804825007d30ebf6f3a93fc5b2505b367cd03694d3bb32f20bc08d49e3
+  '1.9.2':
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.2/clusterctl-darwin-amd64
+    darwin-amd64: sha256:cd703d7c9d9e9e247d40dff778b38602093892ad2dd40dc200627e6b9872c936
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.2/clusterctl-darwin-arm64
+    darwin-arm64: sha256:71fa8bc20da95876b83efa2082b6c1b16ccbf5616fbd1253fb85e611b34cdc59
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.2/clusterctl-linux-amd64
+    linux-amd64: sha256:48b1726353a245bb80a51fdf4003f01d9f89d89445260235c35ae88158d4c5e2
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.2/clusterctl-linux-arm64
+    linux-arm64: sha256:fde217f774242edab1645c23a31aa3eb7ec2bf8be34bfb75071e5057f5da11b5
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.2/clusterctl-linux-ppc64le
+    linux-ppc64le: sha256:3962bf85948d4e9903a32bb7a64ee32b83210fd9b65137ddcee2a88325385281
+    # https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.2/clusterctl-windows-amd64.exe
+    windows-amd64: sha256:3ed22bc865821f09c4f87ca461bd90f4845d75493c23a046cae10aa6a8dc4ce6
